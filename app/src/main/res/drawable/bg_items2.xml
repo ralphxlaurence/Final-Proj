@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Reference your drawable directly -->
+    <item android:drawable="@drawable/bg2"
+        android:gravity="fill"
+        android:bottomLeftRadius="15dp"
+        android:bottomRightRadius="15dp">
+        <!-- Ensure your drawable supports rounded corners -->
+    </item>
+</layer-list>

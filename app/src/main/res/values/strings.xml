@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FinalProject</string>
+    <string name="user">User</string>
+    <string name="physical">Physical Health</string>
+    <string name="dental">Dental Care</string>
+    <string name="mental">Mental Health</string>
+    <string name="rate">Rate</string>
+    <string name="news">News</string>
+    <string name="home">Home</string>
+    <string name="doctors">Doctors</string>
+    <string name="_11">Placeholder 11</string>
+    <string name="files">Files</string>
+    <string name="message">Messages</string>
+    <string name="name" />
+    <string name="loading">Name</string>
+    <string name="email">Email</string>
+
+</resources>

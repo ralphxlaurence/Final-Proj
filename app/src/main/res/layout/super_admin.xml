@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuperAdminActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/bg" />
+
+    <ImageView
+        android:id="@+id/admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        app:srcCompat="@drawable/icons8_admin_100" />
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/admin"
+        android:fontFamily="@font/b612_bold"
+        android:text="Welcome Back, Admin!"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="190dp"
+        android:fontFamily="@font/b612_bold"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:backgroundTint="#f75e5e"
+        android:layout_below="@id/Welcome"/>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="34dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="-42dp"
+        android:layout_marginTop="52dp"
+        android:layout_toRightOf="@+id/admin"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/CreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="115dp"
+        android:fontFamily="@font/b612"
+        android:text="Create an Account:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/UserType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select User Type"
+        android:layout_below="@id/CreateAccount"
+        android:textSize="15sp"
+        android:fontFamily="@font/b612"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupUserType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UserType"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-10dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/Admincheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin"
+            android:fontFamily="@font/b612"
+            android:layout_marginEnd="30dp"
+            android:textSize="18sp"/>
+
+        <CheckBox
+            android:id="@+id/Usercheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User"
+            android:fontFamily="@font/b612"
+            android:textSize="18sp"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupUserType"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="-10dp"
+        android:fontFamily="@font/amarante"
+        android:hint="Username"
+        android:textSize="21sp" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Name"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="-10dp"
+        android:fontFamily="@font/amarante"
+        android:hint="Email"
+        android:textSize="21sp" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:fontFamily="@font/amarante"
+        android:textSize="21sp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginHorizontal="15dp"
+        android:inputType="textPassword"
+        android:layout_below="@id/Email"/>
+
+    <Button
+        android:id="@+id/buttonAddUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:fontFamily="@font/b612_bold"
+        android:textSize="18sp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginHorizontal="15dp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#f75e5e"
+        android:layout_below="@id/Password"/>
+
+    <!-- Update Section -->
+    <TextView
+        android:id="@+id/updateHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update an Account:"
+        android:textSize="20sp"
+        android:fontFamily="@font/b612"
+        android:layout_below="@id/buttonAddUser"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp" />
+
+    <EditText
+        android:id="@+id/UpdateUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:fontFamily="@font/amarante"
+        android:textSize="21sp"
+        android:layout_marginTop="2dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_below="@id/updateHeader" />
+
+    <EditText
+        android:id="@+id/NewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Username"
+        android:fontFamily="@font/amarante"
+        android:textSize="21sp"
+        android:layout_marginTop="6dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_below="@id/UpdateUsername" />
+
+    <EditText
+        android:id="@+id/newPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/NewName"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="5dp"
+        android:hint="New Password"
+        android:inputType="textPassword"
+        android:fontFamily="@font/amarante"
+        android:textSize="21sp" />
+
+    <Button
+        android:id="@+id/buttonUpdateUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_marginTop="-5dp"
+        android:layout_marginLeft="80dp"
+        android:fontFamily="@font/b612_bold"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:backgroundTint="#f75e5e"
+        android:layout_below="@id/newPassword"/>
+
+    <Button
+        android:id="@+id/viewbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:layout_marginStart="40dp"
+        android:text="View"
+        android:fontFamily="@font/b612_bold"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:backgroundTint="#f75e5e"
+        android:layout_toRightOf="@id/buttonUpdateUser"
+        android:layout_below="@id/newPassword"/>
+
+    <!-- Delete Section -->
+    <TextView
+        android:id="@+id/deleteHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete an Account:"
+        android:fontFamily="@font/b612"
+        android:textSize="22sp"
+        android:layout_below="@id/buttonUpdateUser"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="20dp" />
+
+    <EditText
+        android:id="@+id/deleteUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/deleteHeader"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/amarante"
+        android:hint="Username to Delete"
+        android:textColorHint="#78909C"
+        android:textSize="21sp" />
+
+    <Button
+        android:id="@+id/buttonDeleteUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:fontFamily="@font/b612_bold"
+        android:textSize="18sp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#f75e5e"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/deleteUsername"/>
+
+
+
+
+</RelativeLayout>
